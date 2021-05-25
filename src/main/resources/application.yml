@@ -1,0 +1,19 @@
+server:
+  port: 8081
+  
+spring:
+  application:
+    name: customer-service  
+  datasource:
+    url: jdbc:mysql://localhost:3306/brillioMicro?createDatabaseIfNotExist=true
+    username: root
+    password: Vishnu@139
+  jpa:
+    hibernate:
+      ddl-auto: update   
+      show-sql: true
+eureka:
+    client:
+      register-with-eureka: true
+    fetch-registry: true
+
